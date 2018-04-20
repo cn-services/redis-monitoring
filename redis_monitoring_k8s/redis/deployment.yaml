@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: monitoring
+  labels:
+    app: redis
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: redis
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: redis
+        image: gcr.io/google_containers/redis:v1
+        env:
+        - name: MASTER
+          value: "true"
+        ports:
+        - name: redis
+          containerPort: 6379
+      - name: redis-exporter
+        image: oliver006/redis_exporter
+        env:
+        - name: "REDIS_ADDR"
+          value: "localhost:6379"
+        ports:
+        - name: exporter
+          containerPort: 9121
