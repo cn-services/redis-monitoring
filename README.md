@@ -1,5 +1,11 @@
 # Kubernetes Redis Monitoring with Redis Prometheus Exporter #
 
+[![](https://img.shields.io/github/license/jnonino/redis-monitoring)](https://github.com/jnonino/redis-monitoring)
+[![](https://img.shields.io/github/issues/jnonino/redis-monitoring)](https://github.com/jnonino/redis-monitoring)
+[![](https://img.shields.io/github/issues-closed/jnonino/redis-monitoring)](https://github.com/jnonino/redis-monitoring)
+[![](https://img.shields.io/github/languages/code-size/jnonino/redis-monitoring)](https://github.com/jnonino/redis-monitoring)
+[![](https://img.shields.io/github/repo-size/jnonino/redis-monitoring)](https://github.com/jnonino/redis-monitoring)
+
 ## Requirements ##
 
 Install kubectl (https://kubernetes.io/docs/tasks/tools/install-kubectl/).
